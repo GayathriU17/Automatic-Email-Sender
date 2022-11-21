@@ -1,8 +1,6 @@
 import smtplib
 import pandas
-
-sender_email_id="gayathricodes119@gmail.com"
-sender_email_id_password="bbzcyybrhegdipvm"
+from email_details import sender_email_id, sender_email_id_password
 
 data=pandas.read_csv("receiver_emails.csv")
 names_list=data["name"].to_list()
